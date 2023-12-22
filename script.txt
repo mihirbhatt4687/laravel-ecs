@@ -1,0 +1,50 @@
+1. Intro
+
+Hey guys welcome to this video, aj ki iss video me hum dekhenge ki laravel 
+ki custom application ko AWS Elastic container service par kaise run kare, to chaliye start karte hai..
+
+---------------------------------------------------------
+
+laravel ki custom application ko ecs par run karne ke liye hume chahiye laravel ki custom docker
+image, to iske liye hum laravel ki docker image create karke usko ECR jo ki AWS ki container
+registry hai us per push karenge, aur furthe us image se container ko create karenge in the form 
+of ECS task.
+
+-----------------------------------------------------------
+
+Next hai ki ECS me task, service, task definition kya hai isko explain karti video apko i button par 
+miljayegi to ap waha ja kar check kar sakte hai
+aur iss tutorial me hum jis laravel ki image ka use kar rahe hai uska github link apko
+description me se mil jayega to ap same tutorial apne end se perform kar sakte hai...
+
+Ok to ab hamare first step me ECR me repository create karke us per laravel ki docker image ko 
+push karenge.
+
+jaise hi repository ko create karenge, yaha par hume docker image ko ECR par
+push karne ke commands mil jayenge to hume ye same commands ko hamare machine se one by one
+run karna hai...
+
+--------------------------------------------
+
+Next step me hum create karenge ECS cluster with fargate instance type, fargate jo ki serverless
+instance hai to isme koi ec2 instance create nahi hoga aur kuchh configuration bhi dene ki
+zaroorat nahi rahegi ki konsa instace type select karna hai and etcetra...
+
+yaha par hamara cluster create ho chuka hai, ab hum create karte hai task definition jisme hum
+docker container related configuration setup karenge, isme hume same ecstaskexecution role configure
+karna hai jo hamne last video me create kiya tha...again uski link apko i button par mil jayegi
+
+next step me hume create karni hai service using that task definition aur woh service hai wo desired
+task ko create karengi jisme hamara laravel ka container run hoga..
+
+
+
+
+
+
+
+
+
+
+
+
